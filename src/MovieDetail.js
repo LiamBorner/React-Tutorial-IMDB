@@ -55,6 +55,14 @@ const MovieWrapper = styled.div`
     background: url(${props => props.backdrop}) no-repeat;
     background-size: cover;
 
+
+    @media only screen and (max-width: 400px){
+        padding-top: 0;
+        background-size: none;
+        background: none;
+        text-align: center;   
+    }
+
 `;
 
 const MovieInfo = styled.div`
@@ -70,6 +78,18 @@ const MovieInfo = styled.div`
         position: relative;
         top: -5rem;
     }
+
+    @media only screen and (max-width: 400px){
+        display: block;
+        text-align: center; 
+        
+    img {
+        top: 0rem;
+
+    }
+    
+    }
+
 `;
 
   

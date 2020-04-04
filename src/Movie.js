@@ -27,4 +27,14 @@ Movie.propTypes = {
 
 export const Poster = styled.img`
   box-shadow: 0 0 35px black;
+
+  @media only screen and (max-width: 400px){
+
+  
+
+  img {
+    display: block;
+  }
+  }
+
 `;
